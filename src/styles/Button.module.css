@@ -1,0 +1,22 @@
+.button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 90%;
+  margin: 0 auto;
+  background-color: var(--primary-color-green);
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 0 18px 3px var(--primary-color-green);
+}
+
+.button:disabled {
+  box-shadow: none;
+  pointer-events: none;
+  background-color: var(--primary-color-cyan);
+
+}

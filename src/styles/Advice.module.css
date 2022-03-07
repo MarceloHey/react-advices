@@ -1,0 +1,38 @@
+.advice {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  flex: 1;
+  text-align: center;
+  line-height: 1.8rem;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slide-in 2s forwards;
+}
+
+.advice::after {
+  content: '';
+  border: 1px solid var(--primary-color-cyan);
+  margin: 10px 0;
+}
+
+.adviceCode {
+  color: var(--primary-color-green);
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  justify-self: flex-start;
+}
+
+.adviceText {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: initial
+  }
+}

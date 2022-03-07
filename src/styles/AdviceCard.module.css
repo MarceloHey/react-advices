@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  min-height: 200px;
+  border-radius: .5rem; 
+  background-color: var(--secondary-color-blue);
+  padding: 5px 20px 50px 20px;
+  opacity: 0;
+  width: 20px;
+  animation: expand 3s forwards 
+}
+
+@media(max-width: 500px) {
+  .wrapper {
+    margin: 0 40px;
+    max-width: 250px
+  }
+}
+
+@keyframes expand {
+  to {
+    width: inherit;
+    opacity: 1
+  }
+}
