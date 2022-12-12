@@ -1,4 +1,6 @@
 import AdviceCard from './components/AdviceCard';
+import "./styles/global.css";
+
 
 function App() {
   return (
@@ -9,9 +11,14 @@ function App() {
         flexDirection: 'column',
         alignItems: 'center',
         height: '100vh',
-        width: '100vw'
+        maxWidth: '100vw',
+        backgroundColor: '#222222',
+        fontFamily: 'Helvetica',
       }}>
-        <h1 className='title'>Want a piece of advice ? <br /> Give it a go !</h1>
+        <h1 style={{
+          marginBottom: '60px',
+          color: '#a9a9a9'
+        }}>Want a piece of advice ? <br /> Give it a go !</h1>
         <AdviceCard />
       </div>
     </div>

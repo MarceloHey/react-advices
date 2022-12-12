@@ -8,17 +8,17 @@
   line-height: 1.8rem;
   opacity: 0;
   transform: translateX(-30px);
-  animation: slide-in 2s forwards;
+  animation: slide-in 1s forwards;
 }
 
 .advice::after {
   content: '';
-  border: 1px solid var(--primary-color-cyan);
+  border: 1px solid #22A39F ;
   margin: 10px 0;
 }
 
 .adviceCode {
-  color: var(--primary-color-green);
+  color: #F3EFE0;
   font-size: 1rem;
   letter-spacing: .2rem;
   justify-self: flex-start;

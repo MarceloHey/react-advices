@@ -6,17 +6,16 @@
   position: absolute;
   top: 90%;
   margin: 0 auto;
-  background-color: var(--primary-color-green);
+  background-color: #22A39F;
   cursor: pointer;
 }
 
 .button:hover {
-  box-shadow: 0 0 18px 3px var(--primary-color-green);
+  box-shadow: 0 0 18px 3px #22A39F;
 }
 
 .button:disabled {
   box-shadow: none;
   pointer-events: none;
-  background-color: var(--primary-color-cyan);
-
+  background-color: #434242;
 }
