@@ -1,5 +1,5 @@
 # react-advices
-A random advice generator using the "Advice Slip" API
+A random advice generator written in React, consuming the "Advice Slip" API to fetch the advices
 
 You can access it through [this link](https://react-advices.vercel.app/)
 
