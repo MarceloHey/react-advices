@@ -8,7 +8,9 @@
   margin: 0 auto;
   background-color: #22A39F;
   cursor: pointer;
+  transition: .5s;
 }
+
 
 .button:hover {
   box-shadow: 0 0 18px 3px #22A39F;
@@ -18,4 +20,21 @@
   box-shadow: none;
   pointer-events: none;
   background-color: #434242;
+}
+
+
+.button.loading {
+  box-shadow: none;
+  pointer-events: none;
+  background-color: #434242;
+  animation: rotate 2s ease-in-out forwards; 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -6,18 +6,36 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 
+import { useRef } from 'react';
+
 const AdviceCard = () => {
   const [advice, setAdvice] = useState({})
+  const [loading, setLoading] = useState(false)
+  const buttonRef = useRef(null);
 
   useEffect(async () => {
     const advice = await fetchAdvice()
     setAdvice(advice)
   }, [])
 
+  async function handleClick() {
+    const el = buttonRef.current
+    setLoading(true)
+    setAdvice(await fetchAdvice())
+    if (el) {
+      el.addEventListener('animationend', () => {
+        setLoading(false)
+        el.removeEventListener('animationend', () => { })
+      })
+    }
+
+
+  }
+
   return (
     <div key={advice} className={styles.wrapper}>
       <Advice advice={advice} />
-      <Button fetchAdvice={fetchAdvice} setAdvice={setAdvice} />
+      <Button ref={buttonRef} className="btn" loading={loading} handleClick={handleClick} fetchAdvice={fetchAdvice} setAdvice={setAdvice} />
     </div>
   )
 }
