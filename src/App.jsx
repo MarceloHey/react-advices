@@ -1,21 +1,12 @@
 import AdviceCard from './components/AdviceCard';
 import "./styles/global.css";
+import styles from './styles/App.module.css'
 
 
 function App() {
   return (
     <div className="App">
-      <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        alignItems: 'center',
-        height: '100vh',
-        maxWidth: '100vw',
-        width: '100%',
-        backgroundColor: '#222222',
-        fontFamily: 'Helvetica',
-      }}>
+      <div className={styles.appContent}>
         <h1 style={{
           marginBottom: '60px',
           color: '#a9a9a9',

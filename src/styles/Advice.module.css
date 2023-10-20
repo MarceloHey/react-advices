@@ -29,6 +29,20 @@
   margin: 10px 0;
 }
 
+@media(max-width: 600px) {
+  .advice {
+  flex: 0;
+  }
+  .adviceCode {
+    font-size: .8rem;
+    letter-spacing: .2rem;
+  }
+  .adviceText {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+}
+
 
 @keyframes slide-in {
   to {
